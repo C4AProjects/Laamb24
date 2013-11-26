@@ -1,0 +1,15 @@
+#wp-social-login-connect-with{
+	font-weight: bold; display:none;
+}
+
+#wp-social-login-connect-options{
+	padding:0; margin:0;
+}
+
+#wp-social-login-connect-options a{
+	text-decoration: none;
+}
+
+#wp-social-login-connect-options img{
+	border:0 none;
+}

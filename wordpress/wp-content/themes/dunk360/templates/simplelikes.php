@@ -1,0 +1,1 @@
+<div class="social"><?php echo do_shortcode('[simplelikes]'); ?></div>
