@@ -1,3 +1,16 @@
-This a test to see if the semi auto deploy is working!
 
-Ok, now we have an update. Is it showing?
+
+Now we have enabled service hook!
+
+Procedure:
+
+- Make changes to master branch
+- Checkin and test locally
+- If ok do: 
+  - git checkout production
+  - git merge master
+  - git push origin production
+  - git checkout master
+  
+  
+That's all folks.
