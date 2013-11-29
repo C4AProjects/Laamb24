@@ -35,7 +35,7 @@ $page_slug = $post->post_name;
         </div>
 </div>
        
-<div class="content">
+<div class="content video-list">
     	<div class="one-col lft">
         <div class="page-head">
         	<div class="page-title"><h1><?php echo $post->post_title; ?></h1></div>

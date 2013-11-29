@@ -12,8 +12,8 @@ $catslug = $category[1]->slug;
 get_header(); ?>
 <br class="clr" /> 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>   
-<div class="content post-single">
-    <div id="banner-wrapper" class="lft">
+<div class="content post-single-video">
+    <div id="banner-wrapper" class="twelve columns">
         	<div class="post-large-image">
 			<?php 
 			$my_meta = get_custom_field('kava');
@@ -24,31 +24,47 @@ get_header(); ?>
 				$vimeo = $my_meta['vimeo_video_embedded_url'];
 				$video_embedded_url = $vimeo.'?color=0077F0';
 			}?>           
-            <iframe class="video-player" allowtransparency="yes" id="video-player" width="960" height="480" src="<?php echo $video_embedded_url; ?>" frameborder="0" webkitAllowFullScreen mozallowfullscreen  allowfullscreen></iframe>
+            <iframe class="video-player twelve columns" allowtransparency="yes" id="video-player" width="960" height="480" src="<?php echo $video_embedded_url; ?>" frameborder="0" webkitAllowFullScreen mozallowfullscreen  allowfullscreen></iframe>
             </div>
-                <div class="single-post-header"><h1><?php the_title(); ?></h1>
-                <div class="share-url">
-                    <?php locate_template( array( '/templates/share-url.php'), true, false );  ?>
+            <div class="twelve columns">
+                <div class="nine columns meta-video">
+                    <h4 class="category"><?php the_category(); ?></h4>
+                    <div class="single-post-header"><h1><?php the_title(); ?></h1></div>
+                    <div class="blogger"><?php the_author() ?></div>
+                        <p class="date"><?php // echo get_the_time(__('F j Y')); ?>
+                    <?php echo get_the_time(__('F j Y')); ?></p>
+                    <h4><?php
+                    if($post->post_excerpt != ''){
+                        echo strip_tags($post->post_excerpt);
+                    }else {
+                        echo short_content(strip_tags($post->post_content), '...', 6);
+                    }
+                     ?></h4>   
                 </div>
-                <h4><?php
-if($post->post_excerpt != ''){
-	echo strip_tags($post->post_excerpt);
-}else {
-	echo short_content(strip_tags($post->post_content), '...', 6);
-}
- ?></h4>
+                <div class="two columns video-share">
+                    <div class="share-url">
+                        <?php locate_template( array( '/templates/share-url.php'), true, false );  ?>
+                    </div>
+                </div>
+            </div>
+            <div class="posted-comments-here twelve columns">
+                <?php comments_template(); ?>
+            </div>
             </div>
         </div>
-    	
-    </div>
+     <div class="four columns">
+                  <?php include('sidebar-single.php'); ?>          
+    </div>	
+</div>
     <br class="clr" />
     
     <?php endwhile; ?>
-    
+    <div class="container">
     <br class="clr" />
     
 	<?php include('templates/related-video-stories.php'); ?>
     <br class="clr" />
     <?php include('templates/bottom-advert.php'); ?>
+    </div>
  <?php endif; ?>  
 <?php get_footer(); ?>

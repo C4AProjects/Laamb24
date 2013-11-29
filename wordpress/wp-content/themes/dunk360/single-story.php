@@ -16,7 +16,7 @@ get_header(); ?>
 <div class="content ">
 <div class="container">
         <div class="content-wrapper">
-        	<div class="twelve columns">
+        	<div class="twelve columns  story-page">
                 <div id="banner-wrapper" class="twelve columns">
                     <div class="post-large-image seven columns">
                     <?php 
@@ -32,9 +32,9 @@ get_header(); ?>
                         <h4 class="category"><?php the_category(); ?></h4>
                         <h1><?php the_title(); ?></h1>
                         <div class="entry-meta">
-                            <div class="entry-author" style="float:left;">
+                           <!--  <div class="entry-author" style="float:left;"> -->
                             <!-- displays the user's photo and then thumbnail -->
-                            <?php userphoto_the_author_thumbnail() ?>
+                            <?php //userphoto_the_author_thumbnail() ?>
 
 
                             <!-- and this is how to customize the output -->
@@ -44,7 +44,7 @@ get_header(); ?>
                                 array('class' => 'photo'),
                                 get_template_directory_uri() . '/nophoto.jpg'
                             ) */ ?>
-                            </div>
+                            <!-- </div> -->
                         <div class="blogger"><?php the_author() ?></div>
                         <p class="date"><?php // echo get_the_time(__('F j Y')); ?>
                         <br /><?php echo get_the_time(__('F j Y')); ?></p>            

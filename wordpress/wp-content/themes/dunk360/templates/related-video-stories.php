@@ -1,4 +1,4 @@
-<div class="related-stories">
+<div class="related-stories twelve columns" >
 <h1>Related Stories</h1>
     <?php $posts = previous_post_link_plus( array(
 'order_by' => 'post_date',

@@ -296,7 +296,7 @@ $GLOBALS['comment'] = $comment; ?>
 						<?php endif; ?>
 						<h6><?php echo get_comment_author_link(); ?> <span class="comment-time"><?php echo  __('Posted ','dunk360').get_comment_time(); ?></span></h6>
 						<?php comment_text() ?>
-						<?php edit_comment_link(__('Edit comment','dunk360'),'  ',''); ?>
+						<?php edit_comment_link(__('Edit','dunk360'),'  ',''); ?>
 						<?php comment_reply_link(array_merge( $args, array('reply_text' => __('Reply','dunk360'),'depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
 				</div>
 		</div>
