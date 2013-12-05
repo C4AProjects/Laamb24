@@ -31,14 +31,14 @@ if(function_exists('add_theme_support'))
 {
 	add_theme_support( 'post-thumbnails' );
 	//set_post_thumbnail_size( 320, 160 ); // Normal post thumbnails
-	set_post_thumbnail_size( 220, 220 ); // Normal post thumbnails
+	set_post_thumbnail_size( 210, 245 ); // Normal post thumbnails
 	
-	// add_image_size( 'kava-large-slide', 400, 590); // Front slider main image
+	add_image_size( 'kava-large-slide', 400, 590); // Front slider main image
 	add_image_size( 'kava-large', 400, 590, true); // Front slider main image
 	//add_image_size( 'kava-thumbnail', 320, 160, true); // Front thumbnail image
 	//add_image_size( 'kava-thumbnail-bw', 320, 160, true); // To reference the black&amp;white thumbnail in the template files
-	add_image_size( 'kava-thumbnail', 220, 220, true); // Front thumbnail image
-	add_image_size( 'kava-thumbnail-bw', 220, 220, true); // To reference the black&amp;white thumbnail in the template files
+	add_image_size( 'kava-thumbnail', 210, 245, true); // Front thumbnail image
+	add_image_size( 'kava-thumbnail-bw', 210, 245, true); // To reference the black&amp;white thumbnail in the template files
 	
 /*
 add_image_size( 'front-image-thumbnail', 150, 150); // Front Image thumbnail size
@@ -354,8 +354,8 @@ function bw_images_filter($meta) {
 		$explodedFileName = explode(".", $exploded[2]);
 		$updatedFileName = $explodedFileName[0] . '-bw.' . $explodedFileName[1];
 		$meta['sizes']['kava-thumbnail-bw']['file'] = $updatedFileName;
-		$meta['sizes']['kava-thumbnail-bw']['width'] = 320; // Set these dimensions to match the dimensions for the add_image_size above
-		$meta['sizes']['kava-thumbnail-bw']['height'] = 160;
+		$meta['sizes']['kava-thumbnail-bw']['width'] = 210; // Set these dimensions to match the dimensions for the add_image_size above
+		$meta['sizes']['kava-thumbnail-bw']['height'] = 245;
 	}
 
 	list($orig_w, $orig_h, $orig_type) = @getimagesize($file);

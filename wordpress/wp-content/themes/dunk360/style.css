@@ -798,7 +798,7 @@ a.readnow span{ position:absolute;  margin-left:-9999em;}
 
    ========================================================================== */
 
-.post-news-item .post-thumbnail { width:220px; height:220px; border:none; overflow:hidden; position:relative; }
+.post-news-item .post-thumbnail { width:210px; height:245px; border:none; overflow:hidden; position:relative; }
 
 .post-news-item .post-thumbnail img{ }
 
