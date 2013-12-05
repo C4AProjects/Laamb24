@@ -33,7 +33,7 @@ if(function_exists('add_theme_support'))
 	//set_post_thumbnail_size( 320, 160 ); // Normal post thumbnails
 	set_post_thumbnail_size( 220, 220 ); // Normal post thumbnails
 	
-	add_image_size( 'kava-large-slide', 400, 590); // Front slider main image
+	// add_image_size( 'kava-large-slide', 400, 590); // Front slider main image
 	add_image_size( 'kava-large', 400, 590, true); // Front slider main image
 	//add_image_size( 'kava-thumbnail', 320, 160, true); // Front thumbnail image
 	//add_image_size( 'kava-thumbnail-bw', 320, 160, true); // To reference the black&amp;white thumbnail in the template files
