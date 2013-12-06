@@ -62,14 +62,14 @@
                     </h1>
 <!--                         <h4><?php
                 		if($post->post_excerpt != ''){
-                			echo short_content(strip_tags($post->post_excerpt), '...', 15);
+                			//echo short_content(strip_tags($post->post_excerpt), '...', 15);
                 		}else {
-                			echo short_content(strip_tags($post->post_content), '...', 15);
+                			//echo short_content(strip_tags($post->post_content), '...', 15);
                 		}
                 		 ?></h4> -->
-                         <!--
-                        <a class="readnow" href="<?php echo the_permalink(); ?>"><span>Read Now</span></a>
-                        -->
+                         
+                        <!-- <a class="readnow" href="<?php// echo the_permalink(); ?>"><span>Read Now</span></a> -->
+                        
                         <a class="readnow_lnk" href="<?php echo the_permalink(); ?>">Lire la suite...</a>
                         <!--
                         <div class="social">
