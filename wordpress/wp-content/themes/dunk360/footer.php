@@ -163,8 +163,8 @@ function formatText(index, panel) {
  return <?php echo $bansstr; ?>[index - 1];
 }
 
-$("ul.tabs li").css('visibility','hidden');
-$("ul.tabs li:first").css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0}); //Activate first tab
+$("ul.tabs >li").css('visibility','hidden');
+$("ul.tabs >li:first").css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0}); //Activate first tab
 // .animate({"visibility":"visible"}, 1000);
 function tabContent(index){
 	var $tabs = $('ul.tabs');
@@ -186,8 +186,8 @@ $(document).ready(function(){
                 buildNavigation: true,          // If true, builds and list of anchor links to link to each slide
         		pauseOnHover: true,             // If true, and autoPlay is enabled, the show will pause on hover
         		startText: "Go",             // Start text
-		        stopText: "Stop",               // Stop text
-		        navigationFormatter: formatText       // Details at the top of the file on this use (advanced use)
+		        stopText: "Stop"               // Stop text
+		        // navigationFormatter: formatText       // Details at the top of the file on this use (advanced use)
             });
            
         

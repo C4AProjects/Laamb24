@@ -3,7 +3,7 @@
 get_header(); ?>
 <?php require_once(get_template_directory().'/sliders.php'); ?>
     <div class="content">
-    	<div class="one-col  lft" style="margin-top:-357px;margin-left:9px">
+    	<div class="twelve columns main-content" style="margin-top:-357px;margin-left:9px">
         <?php
 		global $post_not_ids;//$post_not_ids 1st 3 posts are excluded since shown as sliders on homepage sliders
 	// default args for wp_query
@@ -48,8 +48,8 @@ get_header(); ?>
 			wp_reset_postdata(); //reset query 
 			 ?>           
         </div>
-        <div class="two-col one lft" id="sidebar">
-        	<?php locate_template( array( 'sidebar.php'), true, false ); ?>
+        <div class="four columns" id="sidebar" >
+        	<?php locate_template( array( '/templates/sidebar-advert.php'), true, false ); ?>
         </div>
     </div>
      <br class="clr" />

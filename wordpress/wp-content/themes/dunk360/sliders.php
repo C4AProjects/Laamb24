@@ -25,13 +25,13 @@
                 	// Start the loop for slider items
                     while ($slider_posts->have_posts()) : $slider_posts->the_post();
                     
-				   $banners[] = short_title('...', 12);
+				   $banners[] = short_title('...', 15);
 				   $post_not_ids[] = $post->ID;
                     ?>
                  <li>
                 <?php if (has_post_thumbnail( $post->ID ) ): 
 					the_post_thumbnail('kava-large'); 
-		 		endif; ?>
+		 		endif; ?>  
                 </li>
                 
                  <?php endwhile; endif;  ?>
@@ -53,14 +53,20 @@
         		if($slider_posts->have_posts()) :
         		while ($slider_posts->have_posts()) : $slider_posts->the_post(); ?>
                 <li>
-                    <div class="top-post-item"><h1><a href="<?php echo the_permalink(); ?>"><?php echo short_title('...', 8); ?></a></h1>
-                        <h4><?php
+                    <div class="top-post-item">
+                    <h4 class="category"><?php the_category(); ?></h4>
+                    <h1>
+                        <a href="<?php echo the_permalink(); ?>">
+                            <?php echo short_title('...', 11); ?>
+                        </a>
+                    </h1>
+<!--                         <h4><?php
                 		if($post->post_excerpt != ''){
                 			echo short_content(strip_tags($post->post_excerpt), '...', 15);
                 		}else {
                 			echo short_content(strip_tags($post->post_content), '...', 15);
                 		}
-                		 ?></h4>
+                		 ?></h4> -->
                          <!--
                         <a class="readnow" href="<?php echo the_permalink(); ?>"><span>Read Now</span></a>
                         -->
