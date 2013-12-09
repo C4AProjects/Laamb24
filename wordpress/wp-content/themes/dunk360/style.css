@@ -937,7 +937,7 @@ a.readnow span{ position:absolute;  margin-left:-9999em;}
   border-radius: 50%; 
 }
 .entry-meta{
-  overflow: auto;
+  overflow: hidden;
   margin-top: -25px;
 }
 .entry-author-suite{
