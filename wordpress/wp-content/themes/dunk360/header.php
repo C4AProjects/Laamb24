@@ -70,11 +70,12 @@ else { echo 'top-stories'; }
 
     <header role="banner" id="header">
     <div class="container">
-      <div class="inner eight columns">
+      <div class="inner nine columns">
         <div id="logo">
           <h1>
             <a href="<?php echo get_option('home'); ?>/">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/logo/laamb24_logo.png" alt="" style="width:320px;">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/logo/laamb24_logo.png" alt="" style="width:415px;">
+              <span class="blog_desc"><span class="part1"><?php _e("Number #1 Website in ") ?></span><span class="part2"><?php _e("Senegalese wrestling") ?></span></span>
               <!-- <span>
                 <?php //bloginfo('name'); ?>
                 |
@@ -143,7 +144,7 @@ else { echo 'top-stories'; }
 ?></div>
         </section>
       </div>
-      <div class="menu four columns omega offset-by-four">
+      <div class="menu four columns omega offset-by-three">
         <div id="social_media_links">
           <ul>
             <li id="facebook_icon">

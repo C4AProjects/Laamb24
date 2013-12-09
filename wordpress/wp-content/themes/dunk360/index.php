@@ -2,6 +2,7 @@
 /*** index file for site **/
 get_header(); ?>
 <?php require_once(get_template_directory().'/sliders.php'); ?>
+		<h1 class="section-title"><?php echo $page_menu_title; ?> </h1>
     <div class="content">
     	<div class="twelve columns main-content" style="margin-top:-357px;margin-left:9px">
         <?php

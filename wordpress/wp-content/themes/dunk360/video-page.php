@@ -25,7 +25,7 @@ $page_slug = $post->post_name;
         	<div class="post-large-image">
             <iframe class="video-player" allowtransparency="yes" id="video-player" width="960" height="480" src="<?php //echo $video_embedded_url; ?>" frameborder="0" webkitAllowFullScreen mozallowfullscreen  allowfullscreen></iframe>
             </div>
-                <div class="single-post-header">
+            <div class="single-post-header">
                 <h1 id="video-title">.</h1>
                 <div class="share-url">
                     <?php locate_template( array( '/templates/share-url.php'), true, false );  ?>
@@ -39,7 +39,7 @@ $page_slug = $post->post_name;
     	<div class="one-col lft">
         <div class="page-head">
         	<div class="page-title"><h1><?php echo $post->post_title; ?></h1></div>
-            <div class="page-nav"><?php locate_template( array( '/templates/pagination-rgt.php'), true, false );  ?></div>
+            <!-- <div class="page-nav"><?php locate_template( array( '/templates/pagination-rgt.php'), true, false );  ?></div> -->
         </div>
         <?php	if($wp_query->have_posts()) : ?>
            <div class="post-entries">

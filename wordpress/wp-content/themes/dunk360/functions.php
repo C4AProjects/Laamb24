@@ -35,6 +35,7 @@ if(function_exists('add_theme_support'))
 	
 	add_image_size( 'kava-large-slide', 400, 590,true); // Front slider main image
 	add_image_size( 'kava-large', 400, 590, true); // Front slider main image
+	add_image_size( 'kava-large-story', 680, 460, true); // Front slider main image
 	//add_image_size( 'kava-thumbnail', 320, 160, true); // Front thumbnail image
 	//add_image_size( 'kava-thumbnail-bw', 320, 160, true); // To reference the black&amp;white thumbnail in the template files
 	add_image_size( 'kava-thumbnail', 210, 245, true); // Front thumbnail image
@@ -392,5 +393,57 @@ function fb_addgravatar( $avatar_defaults ) {
 	return $avatar_defaults;
 }
 add_filter( 'avatar_defaults', 'fb_addgravatar' ); }
+
+
+/**
+ * Image limit minimum size
+ * @return [type] [description]
+ */
+function laamb_block_authors_from_uploading_small_images()
+{
+    if( !current_user_can( 'administrator') )
+        add_filter( 'wp_handle_upload_prefilter', 'laamb_block_small_images_upload' ); 
+}
+
+function laamb_block_small_images_upload( $file )
+{
+    // Mime type with dimensions, check to exit earlier
+    $mimes = array( 'image/jpeg', 'image/png', 'image/gif' );
+
+    if( !in_array( $file['type'], $mimes ) )
+        return $file;
+
+    $img = getimagesize( $file['tmp_name'] );
+    $minimum = array( 'width' => 640, 'height' => 480 );
+
+    if ( $img[0] < $minimum['width'] )
+        $file['error'] = 
+            'Image too small. Minimum width is ' 
+            . $minimum['width'] 
+            . 'px. Uploaded image width is ' 
+            . $img[0] . 'px';
+
+    elseif ( $img[1] < $minimum['height'] )
+        $file['error'] = 
+            'Image too small. Minimum height is ' 
+            . $minimum['height'] 
+            . 'px. Uploaded image height is ' 
+            . $img[1] . 'px';
+
+    return $file;
+}
+add_action( 'admin_init', 'laamb_block_authors_from_uploading_small_images' );
+
+function laamb_wp_nav_menu_objects( $sorted_menu_items )
+{
+    foreach ( $sorted_menu_items as $menu_item ) {
+        if ( $menu_item->current ) {
+            $GLOBALS['page_menu_title'] = $menu_item->title;
+            break;
+        }
+    }
+    return $sorted_menu_items;
+}
+add_filter( 'wp_nav_menu_objects', 'laamb_wp_nav_menu_objects' );
 
 ?>

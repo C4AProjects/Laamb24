@@ -19,11 +19,12 @@ $page_slug = $post->post_name;
 		$wp_query = new WP_Query($args);
 	}
 	?>
+
 <div class="content">
     	<div class="one-col lft">
         <div class="page-head">
-        	<div class="page-title"><h1><?php echo $post->post_title; ?></h1></div>
-            <div class="page-nav"><?php locate_template( array( '/templates/pagination-rgt.php'), true, false );  ?></div>
+        	<h1 class="page-section-title"><?php echo $page_menu_title; ?> </h1>
+            <!-- <div class="page-nav"><?php locate_template( array( '/templates/pagination-rgt.php'), true, false );  ?></div> -->
         </div>
         <?php	if($wp_query->have_posts()) : ?>
            <div class="post-entries">
