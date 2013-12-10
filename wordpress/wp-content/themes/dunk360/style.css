@@ -193,7 +193,7 @@ body{  font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#E2E2E2;}
 
 a{outline:none;text-decoration:none; color: rgb(140,140,140);}
 
-a:hover{ color:#fff; }
+/*a:hover{ color:#fff; }*/
 
 /*.top-stories a:hover{ color:#036E24; }*/
 
@@ -531,8 +531,11 @@ body {   height:100%;text-align:left;width:100%;}
 #twitter marquee a, #twitter div a {
   font-weight: bold;
 }
+#twitter marquee a:hover, #twitter div a:hover{
+  color: #9a1400;
+} 
 #twitter .pointer{
-  border : 1px solid #999;
+  border :1px solid #454545;
     -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -o-border-radius: 5px;
@@ -1516,7 +1519,7 @@ footer.fter{ font-size:12px; overflow:hidden; min-height:300px;}
 
 #fmenu a {padding:0 45px;  display:block; color:#333; font-size:10px; text-transform:uppercase; font-weight:bold;  line-height:50px; }
 
-#fmenu a:hover { color:#950D0D;}
+#fmenu a:hover {}
 
 #legal { text-align:center; color:#333; font-size:10px; font-weight:bold; text-transform:uppercase; }
 
@@ -1529,12 +1532,55 @@ footer.fter{ font-size:12px; overflow:hidden; min-height:300px;}
 #footer #social_media_links ul li{
     float: none;
 }
-.fmenu ul{text-align: right; color: #8c8c8c;font-size: 15px;font-weight: bold;line-height: 20px;}
+.fmenu{
+  font-family: "ITCAvantGardeGothicStdMedium", Arial, sans-serif;
+}
+.fmenu ul{text-align: right; color: #8c8c8c;font-size: 15px;line-height: 20px;}
 .fmenu ul li:first-child{font-size: 22px;}
+.fmenu h2{
+  color: rgb(140,140,140);
+  font-size: 22px;
+  
+}
 
-
-
-
+/*==================================================================
+  Newsletter
+  ==================================================================*/
+  input.newsletter-email{
+    float: left;
+    width: 145px;
+    font-size: 18px;
+    background: #b4b4b4;
+    background: -webkit-gradient(linear, 0 100%, 0 0, from(#979797), to(#b4b4b4));
+    background: -webkit-linear-gradient(#979797 0%, #b4b4b4 100%);
+    background: -moz-linear-gradient(#979797 0%, #b4b4b4 100%);
+    background: -o-linear-gradient(#979797 0%, #b4b4b4 100%);
+    background: linear-gradient(#979797 0%, #b4b4b4 100%);
+    border-radius: 3px 0 0 3px ;
+    border: none;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset, 0 -1px 0 rgba(0,0,0,0.05) inset;
+    transition: all 0.2s linear;
+    font-family: "ITCAvantGardeGothicStdMedium", Arial, sans-serif;
+    font-size: 13px;
+    color: #fff;
+    position: relative;
+    height: 28px;
+    width: 160px;
+    padding-left: 4px;
+  }
+  input.newsletter-submit{
+    font-family: "ITCAvantGardeGothicStdMedium", Arial, sans-serif;
+   font-size: 13px;
+    background-color: #9a1504;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 6px;
+    border: none;
+    height: 30px;
+    font-weight: bold;
+    margin-left: -3px;
+    border-radius:0 3px 3px 0 ;
+  }
 
 /* =============================================================================
 

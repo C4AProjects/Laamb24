@@ -48,6 +48,9 @@
     <div class="three columns fmenu" id="">
     <?php  wp_nav_menu(array('menu' => 'Footer Advertising', 'container' => false, 'menu_class' => '', 'theme_location' => 'secondary', 'link_before' => '', 'link_after' => '<span></span>' )); ?>
     </div>
+    <div class="four columns fmenu">
+    	<?php echo do_shortcode('[do_widget "Newsletter"]'); ?>    
+    </div>
 <!--     <div id="legal" class="row lft">
     &copy; All rights reserved <?php echo bloginfo('name');?> <?php echo date('Y'); ?>
     </div> -->
