@@ -61,24 +61,24 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.easing.1.2.js" type="text/javascript"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.mousewheel-3.0.4.pack.js"></script>  
 <script type="text/javascript">
-$(document).ready(function(){
+jQuery(document).ready(function(){
 
 // place holders
-$("#s",$('#search')).focus(function(){if(this.value=='Search')this.value='';});
-$("#s",$('#search')).blur(function(){if(this.value=='') this.value='Search';}); 
-$("#log",$('#login-form')).focus(function(){if(this.value=='Username')this.value='';});
-$("#log",$('#login-form')).blur(function(){if(this.value=='') this.value='Username';});
-$("#pwd",$('#login-form')).focus(function(){if(this.value=='Password')this.value='';});
-$("#pwd",$('#login-form')).blur(function(){if(this.value=='') this.value='Password';}); 
-$("#user_login",$('#register-form')).focus(function(){if(this.value=='Username')this.value='';});
-$("#user_login",$('#register-form')).blur(function(){if(this.value=='') this.value='Username';});
-$("#user_email",$('#register-form')).focus(function(){if(this.value=='E-Mail')this.value='';});
-$("#user_email",$('#register-form')).blur(function(){if(this.value=='') this.value='E-Mail';});
+jQuery("#s",jQuery('#search')).focus(function(){if(this.value=='Search')this.value='';});
+jQuery("#s",jQuery('#search')).blur(function(){if(this.value=='') this.value='Search';}); 
+jQuery("#log",jQuery('#login-form')).focus(function(){if(this.value=='Username')this.value='';});
+jQuery("#log",jQuery('#login-form')).blur(function(){if(this.value=='') this.value='Username';});
+jQuery("#pwd",jQuery('#login-form')).focus(function(){if(this.value=='Password')this.value='';});
+jQuery("#pwd",jQuery('#login-form')).blur(function(){if(this.value=='') this.value='Password';}); 
+jQuery("#user_login",jQuery('#register-form')).focus(function(){if(this.value=='Username')this.value='';});
+jQuery("#user_login",jQuery('#register-form')).blur(function(){if(this.value=='') this.value='Username';});
+jQuery("#user_email",jQuery('#register-form')).focus(function(){if(this.value=='E-Mail')this.value='';});
+jQuery("#user_email",jQuery('#register-form')).blur(function(){if(this.value=='') this.value='E-Mail';});
 
-$("#toggle-comments").click(function(e) { 
+jQuery("#toggle-comments").click(function(e) { 
 	e.preventDefault();
     // assumes element with id='button'
-    $("#comment-lists").toggle();
+    jQuery("#comment-lists").toggle();
 });
 
 });
@@ -100,53 +100,53 @@ jQuery(document).ready(function() {
 </script>
 <script type="text/javascript"> 	
 	// On window load. POST THUMBNAIL HOVER
-$(window).load(function(){	
+jQuery(window).load(function(){	
 	
 	// post entry li hover functionality
-	var $itmes = $('.post-entries ul li');
+	var $itmes = jQuery('.post-entries ul li');
 	//Get all tabs
 	$itmes.each(function(){
-		var el = $(this);
+		var el = jQuery(this);
 		
 		el.mouseover(function(){
-			$(this).addClass('hover');
+			jQuery(this).addClass('hover');
 		})
 		el.mouseout(function(){
-			$(this).removeClass('hover');
+			jQuery(this).removeClass('hover');
 		});	
 	});	
 	<?php global $pagename; if ( $pagename == 'videos' || $pagename == 'legends' ){ ?>
-	$("#video-story-player").hide();
+	jQuery("#video-story-player").hide();
 	// videos page functionality
-	var $vurls = $('.videos .post-entries ul li a.playnow');
+	var $vurls = jQuery('.videos .post-entries ul li a.playnow');
 	$vurls.each(function(){
-		var el = $(this);
+		var el = jQuery(this);
 		var ell = el.closest('div').attr('title');
 		var elll = el.closest('li').attr('title');
 		el.click(function(e){
 			e.preventDefault();
-			$("#video-story-player").css('display','block');
-			$("#video-player").attr('src', '');
-			$("#video-title").html( ell );
+			jQuery("#video-story-player").css('display','block');
+			jQuery("#video-player").attr('src', '');
+			jQuery("#video-title").html( ell );
 			
-			$("#post-video-excerpt").html(  elll );
+			jQuery("#post-video-excerpt").html(  elll );
 			
-			var $frmsrc = $(this).attr('rel');			
-      		$("#video-player").attr('src', $frmsrc);			
+			var $frmsrc = jQuery(this).attr('rel');			
+      		jQuery("#video-player").attr('src', $frmsrc);			
 			
-			$("#share-twitter").attr('href', 'http://twitter.com/share?url=' + el.attr('href') );
-			$("#share-facebook").attr('href', 'http://www.facebook.com/sharer.php?u=' + el.attr('href') );
-			$("html, body").animate({ scrollTop: 165 }, "slow");
+			jQuery("#share-twitter").attr('href', 'http://twitter.com/share?url=' + el.attr('href') );
+			jQuery("#share-facebook").attr('href', 'http://www.facebook.com/sharer.php?u=' + el.attr('href') );
+			jQuery("html, body").animate({ scrollTop: 165 }, "slow");
 		})
 	});
 	<?php } ?>
 	<?php if (is_single()) { ?>
 	// set active link when on 
-	var $links = $('.menu ul li a');
+	var $links = jQuery('.menu ul li a');
 	$links.each( function() {
-		var thisurl = $(this).attr('href');
+		var thisurl = jQuery(this).attr('href');
 		if(thisurl == '<?php global $catslug; echo get_bloginfo( 'url' ).'/'.$catslug.'/'; ?>'){
-			$(this).parent().addClass('active');
+			jQuery(this).parent().addClass('active');
 		}
 	});	
 	<?php }  ?>
@@ -163,20 +163,20 @@ function formatText(index, panel) {
  return <?php echo $bansstr; ?>[index - 1];
 }
 
-$("ul.tabs >li").css('visibility','hidden');
-$("ul.tabs >li:first").css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0}); //Activate first tab
+jQuery("ul.tabs >li").css('visibility','hidden');
+jQuery("ul.tabs >li:first").css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0}); //Activate first tab
 // .animate({"visibility":"visible"}, 1000);
 function tabContent(index){
-	var $tabs = $('ul.tabs');
+	var jQuerytabs = jQuery('ul.tabs');
 	//Get all tabs
-	var $tab = $tabs.find('> li');
+	var jQuerytab = jQuerytabs.find('> li');
 	//Make Tab Active $tab.removeClass('cur');
-	$tab.css('visibility','hidden');
-	$tab.filter(':eq(' + (index) + ')').css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0}); 
+	jQuerytab.css('visibility','hidden');
+	jQuerytab.filter(':eq(' + (index) + ')').css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0}); 
 }
-$(document).ready(function(){
+jQuery(document).ready(function(){
 
-		 $('.anythingSlider').anythingSlider({
+		 jQuery('.anythingSlider').anythingSlider({
                 easing: "easeOutQuint",        // Anything other than "linear" or "swing" requires the easing plugin
                 autoPlay: true,                 // This turns off the entire FUNCTIONALY, not just if it starts running or not.
                 delay: 3000,                    // How long between slide transitions in AutoPlay mode
@@ -192,11 +192,14 @@ $(document).ready(function(){
            
         
 		// add '.last' to last item to get margin off    
-		var $slideitems   = $('#thumbNav').find('> a');
+		var $slideitems   = jQuery('#thumbNav').find('> a');
  		$slideitems.filter(':last').addClass('last');
 });
 </script>
+
 <?php } ?>
+<!--<script src="<?php echo get_template_directory_uri(); ?>/js/gistfile1.js" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/feed.js" type="text/javascript"></script>-->
 <?php wp_footer(); ?>	
 <!-- Don't forget analytics -->
 <?php echo get_option('kava_contact_analytics'); ?>	

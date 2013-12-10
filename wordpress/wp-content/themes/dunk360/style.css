@@ -251,7 +251,7 @@ strong { font-weight:bold;}
 
 html { text-align:center; width:100%; background:#FFF;}
 
-body {   height:100%;text-align:left;width:100%;  background:transparent url(images/bg_header.png)  0 0 repeat-x;}
+body {   height:100%;text-align:left;width:100%;}
 
 
 
@@ -291,7 +291,7 @@ body {   height:100%;text-align:left;width:100%;  background:transparent url(ima
 
    ========================================================================== */
 
-#header { height:399px;  background:#FFF; background-image: url(images/header/laamb24_header_image.png);}
+#header { height:399px;  background:#FFF; background-image: url(images/header/laamb24_header_image.jpg);}
 
 /*
 .top-stories #header { box-shadow: 0 0 15px 5px rgba(3,110,36,.25);  -moz-box-shadow: 0 0 15px 5px rgba(3,110,36,.25);  -webkit-box-shadow: 0 0 15px 5px rgba(3,110,36,.25);  }
@@ -430,18 +430,18 @@ body {   height:100%;text-align:left;width:100%;  background:transparent url(ima
 
    ========================================================================== */
 .menu {
-  margin-top: 150px;
+  margin-top: 115px;
 }  
 
 #main_menu ul li a {
   font-family: colaboratelightregular,Helvetica,Arial, sans-serif;
   color: rgb(140,140,140);
-  font-size: 2.2em;
+  font-size: 2.1em;
   font-weight: bold;
   display: block;
   text-decoration: none;
   padding: 0;
-  line-height: 30px;
+  line-height: 27px;
   text-transform: uppercase;
   text-align: right;
 }
@@ -508,7 +508,7 @@ body {   height:100%;text-align:left;width:100%;  background:transparent url(ima
 
 #search-box{float: right;}
 
-#search-box fieldset{padding:10px 0 0 0;text-align:right;display: block;}
+#search-box fieldset{padding:1px 0 0 0;text-align:right;display: block;}
 
 #search-box .inline .text{ text-transform:uppercase; color:#C3C3C3; width:128px;  background:#FFFF;  margin-right: -6px;   padding: 2px 2px 2px 6px; font-size:10px; font-weight:bold; }
 
@@ -520,8 +520,25 @@ body {   height:100%;text-align:left;width:100%;  background:transparent url(ima
 
 
 
-
-
+/*====================================
+  Twitter ticker
+  
+======================================*/
+#twitter{
+  background: transparent url(images/bare-top.png) no-repeat left center;
+ 
+}
+#twitter marquee a, #twitter div a {
+  font-weight: bold;
+}
+#twitter .pointer{
+  border : 1px solid #999;
+    -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
 
 
 
@@ -725,16 +742,22 @@ color: #CCC; font-size: 14px; display: block; float:left; padding: 12px 19px 3px
 
 .post-single .two-col.one  #sidebar-advert{ border-bottom:none; padding-bottom:0; } 
 
-.story-page .post-large-image{margin-top:-260px; margin-left: 0px;}
+.story-page .post-large-image{margin-top:-245px; margin-left: 0px;}
 
 .single-post-header,.content-wrap{
   margin-left: 0px;
 }
-
+.single-post-header .category{
+  background: transparent url(images/trait-cat.jpg) no-repeat left top;
+  padding-left: 90px;
+  padding-top: 2px;
+}
 .single-post-header .category a{
   color: #9a1400;  
   font-weight: bold;
+  line-height: 22px;
   display: block;
+  text-transform: uppercase;
 }
 .single-post-header h1{  
   font-size: 2.2em;  
@@ -763,6 +786,8 @@ color: #CCC; font-size: 14px; display: block; float:left; padding: 12px 19px 3px
 }
 .main-content{
   color: #000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:1.15em;
 }
 /* =============================================================================
 
@@ -807,7 +832,7 @@ color: #CCC; font-size: 14px; display: block; float:left; padding: 12px 19px 3px
 */
 
 .post-single-video iframe.video-player{
-  margin-top: -260px;
+  margin-top: -245px;
 }
 .post-single-video .meta-video,.post-single-video .video-share{
   margin-top: 5px;
@@ -1257,7 +1282,12 @@ margin: 0 auto;}
 
 
 
-
+.page-content{
+  min-height: 500px;
+  margin-top: -230px;
+  padding: 1px 10px;
+  background-color: #fff;
+}
 
 
 

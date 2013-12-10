@@ -70,6 +70,7 @@ else { echo 'top-stories'; }
 
     <header role="banner" id="header">
     <div class="container">
+        <?php echo do_shortcode('[do_widget "Twitter Feed Ticker"]'); ?>    
       <div class="inner nine columns">
         <div id="logo">
           <h1>
