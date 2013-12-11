@@ -16,9 +16,9 @@ get_header(); ?>
 <div class="content ">
 <div class="container">
         <div class="content-wrapper">
-        	<div class="twelve columns  story-page">
-                <div id="banner-wrapper" class="twelve columns" style="margin-left:0px;">
-                    <div class="post-large-image twelve columns">
+        	<div class="grid_9  story-page">
+                <div id="banner-wrapper" class="" style="margin-left:0px;">
+                    <div class="post-large-image ">
                     <?php 
                     $wslider = get_post_meta($post->ID, 'Wow slider', true);
                     if(!empty($wslider) && $wslider != "" )
@@ -27,7 +27,7 @@ get_header(); ?>
                         echo get_the_post_thumbnail($post->ID,'kava-large-story'); 
                     }?>
                     </div>
-                        <div class="single-post-header twelve columns" style="margin-left:0px;">
+                        <div class="single-post-header" style="margin-left:0px;">
                         <!-- <div class="trait"></div> -->
                         <h4 class="category"><?php the_category(); ?></h4>
                         <h1><?php the_title(); ?></h1>
@@ -62,7 +62,7 @@ get_header(); ?>
     				<?php the_content(); ?>
                 </div>            
             </div>
-            <div class="four columns">
+            <div class="grid_3 omega">
                   <?php include('sidebar-single.php'); ?>          
             </div>
         </div>
@@ -70,7 +70,7 @@ get_header(); ?>
     </div>
     <br class="clr" />
     
-    <div class="posted-comments-here twelve columns">
+    <div class="posted-comments-here grid_9">
     	<?php comments_template(); ?>
     </div>
     

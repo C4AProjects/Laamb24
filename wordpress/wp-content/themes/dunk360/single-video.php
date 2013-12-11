@@ -13,7 +13,7 @@ get_header(); ?>
 <br class="clr" /> 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>   
 <div class="content post-single-video">
-    <div id="banner-wrapper" class="twelve columns">
+    <div id="banner-wrapper" class="grid_9">
         	<div class="post-large-image">
 			<?php 
 			$my_meta = get_custom_field('kava');
@@ -50,9 +50,16 @@ get_header(); ?>
             <div class="posted-comments-here twelve columns">
                 <?php comments_template(); ?>
             </div>
+            <div class="rel">
+                    <br class="clr" />
+                
+                <?php include('templates/related-video-stories.php'); ?>
+                <br class="clr" />
+                <?php include('templates/bottom-advert.php'); ?>
+            </div>
             </div>
         </div>
-     <div class="four columns">
+     <div class="grid_3 omega">
                   <?php include('sidebar-single.php'); ?>          
     </div>	
 </div>
@@ -60,11 +67,7 @@ get_header(); ?>
     
     <?php endwhile; ?>
     <div class="container">
-    <br class="clr" />
-    
-	<?php include('templates/related-video-stories.php'); ?>
-    <br class="clr" />
-    <?php include('templates/bottom-advert.php'); ?>
+
     </div>
  <?php endif; ?>  
 <?php get_footer(); ?>

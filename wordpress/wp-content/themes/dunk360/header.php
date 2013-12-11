@@ -11,7 +11,7 @@
   <?php } ?>
   <title><?php          if (function_exists('is_tag') && is_tag()) {             single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }          elseif (is_archive()) {             wp_title(''); echo ' Archive - '; }          elseif (is_search()) {             echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }          elseif (!(is_404()) && (is_single()) || (is_page())) {             wp_title(''); echo ' - '; }          elseif (is_404()) {             echo 'Not Found - '; }          if (is_home()) {             bloginfo('name'); echo ' - '; bloginfo('description'); }          else {              bloginfo('name'); }          if ($paged>1) {             echo ' - page '. $paged; }       ?></title>
   <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico">
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/skeleton.css" type="text/css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/grid.css" type="text/css">
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" >
   <!--[if lt IE 9]>
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>
@@ -69,9 +69,9 @@ else { echo 'top-stories'; }
     <!-- /Registration -->
 
     <header role="banner" id="header">
-    <div class="container">
+    <div class="container_12">
         <?php echo do_shortcode('[do_widget "Twitter Feed Ticker"]'); ?>    
-      <div class="inner nine columns">
+      <div class="inner grid_5">
         <div id="logo">
           <h1>
             <a href="<?php echo get_option('home'); ?>/">
@@ -145,7 +145,7 @@ else { echo 'top-stories'; }
 ?></div>
         </section>
       </div>
-      <div class="menu four columns omega offset-by-three">
+      <div class="menu grid_4">
         <div id="social_media_links">
           <ul>
             <li id="facebook_icon">
@@ -175,7 +175,7 @@ else { echo 'top-stories'; }
     </div>
     </header>
     <div id="content-wrapper">
-      <div class="container" id="body-content-wrap">
+      <div class="container_12" id="body-content-wrap">
         <?php include('templates/page-leftside-advert.php'); ?>
         <?php include('templates/page-rightside-advert.php'); ?>
         <?php include('templates/top_advert.php'); ?>

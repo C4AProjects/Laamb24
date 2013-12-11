@@ -1,4 +1,4 @@
-<div id="banner-wrapper">
+<div id="banner-wrapper" class="grid_5">
 <div class="banner lft">
        <div id="slider-wrapper">
         

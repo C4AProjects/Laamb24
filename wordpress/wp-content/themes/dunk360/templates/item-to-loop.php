@@ -1,4 +1,4 @@
-<li><div class="post-news-item lft">
+<li class="grid_4"><div class="post-news-item lft">
 	<div class="post-thumbnail">
 		<a href="<?php the_permalink(); ?>"><?php locate_template( array( '/templates/thumb.php'), true, false ); ?></a>
 	</div>

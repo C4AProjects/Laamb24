@@ -7,7 +7,7 @@ if(!empty($ytube) && $ytube != "" )
 else {
 	$vimeo = $my_meta['vimeo_video_embedded_url'];
 	$video_embedded_url = $vimeo.'?color=0077F0';
-}?><li title="<?php
+}?><li class="grid_4" title="<?php
 if($post->post_excerpt != ''){
 	echo strip_tags($post->post_excerpt);
 }else {

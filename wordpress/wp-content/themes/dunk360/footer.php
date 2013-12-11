@@ -1,8 +1,8 @@
 	</div><!-- Container -->
 </div><!-- End for Content wrap -->
 <br class="clr" />
-<footer class="fter">
-  <section id="footer" class="container">  
+<footer class="fter container_12">
+  <section id="footer" class="grid_9">  
   	<!--
     <div class="row lft" id="declaration">
             <h1 id="logo-declaration"><a href="#"><span>Declaration</span></a></h1>
@@ -10,7 +10,7 @@
             
     </div>
     -->
-    <div class="three columns">
+    <div class="grid_2">
     	 <div class="logo">
           <h1>
             <a href="<?php echo get_option('home'); ?>/">
@@ -39,16 +39,16 @@
           </ul>
         </div>
     </div>
-    <div class="three columns fmenu" id="">
+    <div class="grid_3 fmenu" id="">
     <?php  wp_nav_menu(array('menu' => 'Primary Menu', 'container' => false, 'menu_class' => '', 'theme_location' => 'primary', 'link_before' => '', 'link_after' => '<span></span>' )); ?>
     </div>
-    <div class="three columns fmenu" id="">
+    <div class="grid_2 fmenu" id="">
     <?php  wp_nav_menu(array('menu' => 'Footer Menu', 'container' => false, 'menu_class' => '', 'theme_location' => 'secondary', 'link_before' => '', 'link_after' => '<span></span>' )); ?>
     </div>
-    <div class="three columns fmenu" id="">
+    <div class="grid_2 fmenu" id="">
     <?php  wp_nav_menu(array('menu' => 'Footer Advertising', 'container' => false, 'menu_class' => '', 'theme_location' => 'secondary', 'link_before' => '', 'link_after' => '<span></span>' )); ?>
     </div>
-    <div class="four columns fmenu">
+    <div class="grid_3 omega fmenu">
     	<?php echo do_shortcode('[do_widget "Newsletter"]'); ?>    
     </div>
 <!--     <div id="legal" class="row lft">

@@ -21,7 +21,7 @@ $page_slug = $post->post_name;
 	?>
 <br class="clr" /> 
 <div class="content post-single" id="video-story-player">
-	<div id="banner-wrapper" class="lft">
+	<div id="banner-wrapper" class="">
         	<div class="post-large-image">
             <iframe class="video-player" allowtransparency="yes" id="video-player" width="960" height="480" src="<?php //echo $video_embedded_url; ?>" frameborder="0" webkitAllowFullScreen mozallowfullscreen  allowfullscreen></iframe>
             </div>
@@ -36,7 +36,7 @@ $page_slug = $post->post_name;
 </div>
        
 <div class="content video-list">
-    	<div class="one-col lft">
+    	<div class="grid_9 lft">
         <div class="page-head">
         	<div class="page-title"><h1><?php echo $post->post_title; ?></h1></div>
             <!-- <div class="page-nav"><?php locate_template( array( '/templates/pagination-rgt.php'), true, false );  ?></div> -->
@@ -56,6 +56,9 @@ $page_slug = $post->post_name;
            <?php else : ?>
             <div><p><?php _e('You do not have any posts to display.','kava'); ?></p></div>
             <?php endif; ?>           
+        </div>
+        <div class="grid_3 omega" id="sidebar" >
+            <?php locate_template( array( '/templates/sidebar-advert.php'), true, false ); ?>
         </div>
     </div>
     <br class="clr" />

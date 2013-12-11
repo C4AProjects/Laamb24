@@ -2,7 +2,7 @@
 global $post;
  ?>
     <div class="content">
-    <div class="twelve columns  single-page">
+    <div class="grid_9  single-page">
         <div class="page-content">
             <div class="page-head">
             	<div class="page-title"><h1><?php echo $post->post_title; ?></h1></div>
@@ -13,7 +13,7 @@ global $post;
             </div>
         <br class="clr" />
     </div>
-    <div class="four columns">
+    <div class="grid_3 omega">
       <?php include('sidebar-single.php'); ?>          
     </div>
 <?php get_footer(); ?>

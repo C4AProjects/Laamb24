@@ -1,4 +1,4 @@
-<div class="related-stories twelve columns" >
+<div class="related-stories " >
 <h1>Related Stories</h1>
     <?php $posts = previous_post_link_plus( array(
 'order_by' => 'post_date',
@@ -18,7 +18,7 @@
            <div class="post-entries">
         	<ul>
             <?php foreach($posts as $post) :  ?>
-            <li><div class="post-news-item lft">
+            <li class="grid_4"><div class="post-news-item lft">
 	<div class="post-thumbnail" title="<?php echo $post->post_title; ?>">
 		<a href="<?php echo  get_permalink( $post->ID ); ?>"><?php locate_template( array( '/templates/thumb.php'), true, false ); ?></a>
         <a href="<?php echo  get_permalink( $post->ID ); ?>" class="play playnow" rel="<?php echo $video_embedded_url; ?>"></a>

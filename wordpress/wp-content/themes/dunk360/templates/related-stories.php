@@ -1,5 +1,5 @@
-<div class="related-stories container">
-	<div class="twelve columns">
+<div class="related-stories grid_9">
+	<div class="">
 		<h1>Related Stories</h1>
 		<?php $posts = previous_post_link_plus( array(
 'order_by' =>
@@ -24,7 +24,7 @@
 		<div class="post-entries">
 			<ul>
 				<?php foreach($posts as $post) :  ?>
-				<li>
+				<li class="grid_4">
 					<div class="post-news-item lft">
 						<div class="post-thumbnail">
 							<a href="<?php the_permalink(); ?>

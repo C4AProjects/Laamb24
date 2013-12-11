@@ -20,8 +20,8 @@ $page_slug = $post->post_name;
 	}
 	?>
 
-<div class="content">
-    	<div class="one-col lft">
+<div class="content story-page">
+    	<div class="grid_9 ">
         <div class="page-head">
         	<h1 class="page-section-title"><?php echo $page_menu_title; ?> </h1>
             <!-- <div class="page-nav"><?php locate_template( array( '/templates/pagination-rgt.php'), true, false );  ?></div> -->
@@ -41,6 +41,9 @@ $page_slug = $post->post_name;
            <?php else : ?>
             <div><p><?php _e('You do not have any posts to display.','kava'); ?></p></div>
             <?php endif; ?>           
+        </div>
+        <div class="grid_3 omega" id="sidebar" >
+            <?php locate_template( array( '/templates/sidebar-advert.php'), true, false ); ?>
         </div>
     </div>
     <br class="clr" />
