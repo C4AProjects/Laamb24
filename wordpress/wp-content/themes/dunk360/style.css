@@ -643,16 +643,16 @@ color: #CCC; font-size: 14px; display: block; float:left; padding: 12px 19px 3px
 
 #triangle_shape {
   position: absolute;
-  left: 409px; 
-  top: 92px;
+  left: 593px;
+  top: 187px;
 }
 
 /**** top stories  ****/
 
 /*#top-featured-stories { height:135px; background-color:#191919;overflow:hidden; position:relative;  }*/
 #top-featured-stories {
-  margin-left: 0px; 
-  left: -230px;
+  margin-left: 0px;
+  left: -242px;
   width: 260px;
   height: 180px;
   top: 200px;
