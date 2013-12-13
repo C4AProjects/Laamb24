@@ -33,6 +33,24 @@
               <span class="blog_desc"><span class="part1"><?php _e("Number #1 Website in ") ?></span><span class="part2"><?php _e("Senegalese wrestling") ?></span></span>
           </h1>
         </div>
+        <div class="menu grid_4">
+        <div id="social_media_links">
+          <ul>
+            <li id="facebook_icon">
+              <a id="facebook_link" href="#">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/icons/facebook_icon.png" alt="facebook"></a>
+            </li>
+            <li id="twitter_icon">
+              <a id="twitter_link" href="#">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/icons/twitter_icon.png" alt="twitter"></a>
+            </li>
+            <li id="google_plus_icon">
+              <a id="google_plus_link" href="#">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/icons/google_plus_icon.png" alt="google plus"></a>
+            </li>
+          </ul>
+        </div> 
+      </div>
       <div style="">
       <!-- Registration -->
       <div id="register-form">

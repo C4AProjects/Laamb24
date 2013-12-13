@@ -774,6 +774,12 @@ body.undercons{
   line-height: 12px;
   margin-top:12px;
 }
+.ucontainer .menu{
+  float: none;
+  width: 106px;
+  margin: 0px auto;
+  display: block;
+}
 .ucontainer .main-content{
   color: #000;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -782,7 +788,7 @@ body.undercons{
 .ucontainer>#logo{
   width: 415px;
   margin:0 auto;
-  padding-top:180px;
+  padding-top:160px;
 }
 
 .ucontainer #register-form{
