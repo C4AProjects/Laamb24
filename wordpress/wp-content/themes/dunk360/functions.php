@@ -33,7 +33,7 @@ if(function_exists('add_theme_support'))
 	//set_post_thumbnail_size( 320, 160 ); // Normal post thumbnails
 	set_post_thumbnail_size( 210, 245 ); // Normal post thumbnails
 	
-	add_image_size( 'kava-large-slide', 569, 700,TRUE); // Front slider main image
+	add_image_size( 'kava-large-slide', 520, 9999); // Front slider main image
 	add_image_size( 'kava-large', 520, 9999); // Front slider main image
 	add_image_size( 'kava-large-story', 680, 460, true); // Front slider main image
 	//add_image_size( 'kava-thumbnail', 320, 160, true); // Front thumbnail image
@@ -445,5 +445,63 @@ function laamb_wp_nav_menu_objects( $sorted_menu_items )
     return $sorted_menu_items;
 }
 add_filter( 'wp_nav_menu_objects', 'laamb_wp_nav_menu_objects' );
+
+ 
+/* -----------------------------------------------------------------------------
+    Underconstruction / Maintenance Mode
+----------------------------------------------------------------------------- */
+ 
+function mytheme_under_contruction(){
+ 
+    // if user is logged in, don't show the construction page
+    if ( is_user_logged_in() ) {
+        return;
+    }
+ 
+    // You could check the remote ip
+    // $ips = array( '127.0.0.1', '192.168.0.1', '208.117.46.9' );
+    // if ( in_array( $_SERVER['REMOTE_ADDR'], $ips ) ) {
+    //     return;
+    // }
+ 
+    $protocol = $_SERVER["SERVER_PROTOCOL"];
+    if ( 'HTTP/1.1' != $protocol && 'HTTP/1.0' != $protocol )
+        $protocol = 'HTTP/1.0';
+    // 503 is recommended :  http://bit.ly/YdGkXl
+    header( "$protocol 503 Service Unavailable", true, 503 );
+    // or header( "$protocol 200 Ok", true, 200 );
+    header( 'Content-Type: text/html; charset=utf-8' );
+    // adjust the Retry-After value (in seconds)
+    header( 'Retry-After: 3600' );
+ 
+    // custom template if under-construction.php exists in your (child) theme
+    if ( file_exists( get_stylesheet_directory() . '/under-construction.php' ) ) {
+        require_once( get_stylesheet_directory() . '/under-construction.php' );
+        die();
+    }
+ 
+    // default template (customize it)
+?>
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml"<?php if ( is_rtl() ) echo ' dir="rtl"'; ?>>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title><?php _e( 'Maintenance mode', 'my_theme' ); ?></title>
+        <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
+    </head>
+    <body>
+        <div class="under-construction-message">
+            <h1><?php _e( 'The Site Is Currently Under Construction.', 'my_theme' ); ?></h1>
+            <h2><?php _e( '...', 'my_theme' ); ?></h2>
+        </div>
+    </body>
+    </html>
+<?php
+ 
+    die();
+ 
+}
+ 
+add_action( 'template_redirect', 'mytheme_under_contruction' );
 
 ?>
