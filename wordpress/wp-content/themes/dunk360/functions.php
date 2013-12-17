@@ -33,8 +33,8 @@ if(function_exists('add_theme_support'))
 	//set_post_thumbnail_size( 320, 160 ); // Normal post thumbnails
 	set_post_thumbnail_size( 210, 245 ); // Normal post thumbnails
 	
-	add_image_size( 'kava-large-slide', 520, 9999); // Front slider main image
-	add_image_size( 'kava-large', 520, 9999); // Front slider main image
+	// add_image_size( 'kava-large-slide', 520, 9999); // Front slider main image
+	add_image_size( 'laamb-large', 578, 700, true); // Front slider main image
 	add_image_size( 'kava-large-story', 680, 460, true); // Front slider main image
 	//add_image_size( 'kava-thumbnail', 320, 160, true); // Front thumbnail image
 	//add_image_size( 'kava-thumbnail-bw', 320, 160, true); // To reference the black&amp;white thumbnail in the template files

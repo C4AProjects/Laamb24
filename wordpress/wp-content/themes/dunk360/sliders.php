@@ -30,7 +30,7 @@
                     ?>
                  <li>
                 <?php if (has_post_thumbnail( $post->ID ) ): 
-					the_post_thumbnail('kava-large-slide'); 
+					the_post_thumbnail('laamb-large'); 
 		 		endif; ?>  
                 </li>
                 

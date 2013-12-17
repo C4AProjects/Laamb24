@@ -38,7 +38,7 @@ get_header(); ?>
             
             <?php 
 							while ($wp_query->have_posts()) : $wp_query->the_post();  
-             	locate_template( array( '/templates/item-to-loop.php'), true, false ); 
+             	locate_template( array( '/templates/item-to-loop-index.php'), true, false ); 
              endwhile; 
 						?>
             </ul>
