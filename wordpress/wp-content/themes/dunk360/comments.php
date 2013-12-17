@@ -86,7 +86,7 @@
 
 <p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea></p>
 
-<p><input name="submit" type="submit" id="submit" tabindex="5" value=" " />
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Poster" />
 <?php comment_id_fields(); ?>
 </p>
 <?php do_action('comment_form', $post->ID); ?>

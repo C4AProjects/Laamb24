@@ -502,6 +502,6 @@ function mytheme_under_contruction(){
  
 }
  
-add_action( 'template_redirect', 'mytheme_under_contruction' );
+// add_action( 'template_redirect', 'mytheme_under_contruction' );
 
 ?>

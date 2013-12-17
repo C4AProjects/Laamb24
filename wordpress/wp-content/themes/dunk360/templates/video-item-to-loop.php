@@ -21,7 +21,7 @@ if($post->post_excerpt != ''){
 	<div class="post-details">
 		<?php locate_template( array( '/templates/post-title-excerpt.php'), true, false ); ?>
 		<div class="post-link" title="<?php the_title(); ?>" >
-		<a href="<?php the_permalink(); ?>" class="readnow playnow" rel="<?php echo $video_embedded_url; ?>"><span>Play Now</span></a>
+		<a href="<?php the_permalink(); ?>" class="readnow playnow" rel="<?php echo $video_embedded_url; ?>">Play</a>
 		<?php locate_template( array( '/templates/simplelikes.php'), true, false ); ?>
 	</div>
 	</div>

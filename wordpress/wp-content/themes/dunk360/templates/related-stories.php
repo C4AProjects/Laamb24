@@ -41,18 +41,17 @@
 							</h3>
 							<h4>
 								<?php
-if($post->
-								post_excerpt != ''){
-	echo short_content(strip_tags($post->post_excerpt), '...', 6);
-}else {
-	echo short_content(strip_tags($post->post_content), '...', 6);
-}
- ?>
+									if($post->post_excerpt != ''){
+										echo short_content(strip_tags($post->post_excerpt), '...', 6);
+									}else {
+										echo short_content(strip_tags($post->post_content), '...', 6);
+									}
+								 ?>
 							</h4>
 							<div class="post-link">
 								<a href="<?php the_permalink(); ?>
 									" class="readnow">
-									<span>Read Now</span>
+									Lire
 								</a>
 								<?php locate_template( array( '/templates/simplelikes.php'), true, false ); ?></div>
 						</div>

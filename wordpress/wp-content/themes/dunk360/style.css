@@ -197,7 +197,7 @@ a{outline:none;text-decoration:none; color: rgb(140,140,140);}
 
 /*.top-stories a:hover{ color:#036E24; }*/
 
-.news a:hover{ color:#cc0000; }
+/*.news a:hover{ color:#cc0000; }*/
 
 .rumors a:hover{ color:#339900; }
 
@@ -809,6 +809,7 @@ body.undercons{
   height: 18px;
   background: rgba(152, 21, 5, .5);
   color: white;
+  font-weight: bold;
 }
 .ucontainer #register-form label{
   color: inherit;
@@ -887,7 +888,7 @@ body.undercons{
   font-weight: bold;
   font-size: 1.1em;
 }
-.story-page{
+.content-wrapper .story-page{
   border-bottom: 4px solid #757575;
 }
 .main-content{
@@ -979,21 +980,24 @@ body.undercons{
 
 .post-entries li.hover  .post-link{ visibility:visible; } /** use of visibility instead of display cuz of fb like **/
 
-a.readnow{ display:inline-block; width:89px; height:26px; background:transparent url(images/btn_readnow.png) no-repeat left top;  }
+a.readnow{ display:inline-block; width:89px; line-height: 25px;
+height: 26px;
+color: #fff;
+font-weight: bold;  }
 
 a.readnow span{ position:absolute;  margin-left:-9999em;}
 
-.top-stories a.readnow{ background-color:#036E24; }
+.top-stories a.readnow{ background-color:#9a1400; }
 
-.news a.readnow{ background-color:#cc0000; }
+.news a.readnow{ background-color:#9a1400; }
 
-.rumors a.readnow{ background-color:#339900; }
+.rumors a.readnow{ background-color:#9a1400; }
 
-.videos a.readnow{ background:#0077f0 url(images/btn_playnow.png) no-repeat left top; }
+.videos a.readnow{ background:#9a1400 ; }
 
-.fashion-style a.readnow{ background-color:#cccccc; }
+.fashion-style a.readnow{ background-color:#9a1400; }
 
-.legends a.readnow{ background:#cc9900 url(images/btn_playnow.png) no-repeat left top; }
+.legends a.readnow{ background:#9a1400; }
 
 
 
@@ -1282,9 +1286,9 @@ margin: 0 auto;}
 .rumors .page-title h1{
   margin-bottom: 0px;
 }
-.videos  .page-head ,.rumors  .page-head,.news  .page-head,.legends .page-head,.fashion-style .page-head{ border-bottom:solid 5px #a2a2a2; }
+/*.videos  .page-head ,.rumors  .page-head,.news  .page-head,.legends .page-head,.fashion-style .page-head{ border-bottom:solid 5px #a2a2a2; }*/
 
-.fashion-style  .page-head{ border-bottom:solid 5px #cccccc; }
+/*.fashion-style  .page-head{ border-bottom:solid 5px #cccccc; }*/
 
 /*.legends  .page-head { border-bottom:solid 5px #cc9900; }  */
 
@@ -1300,11 +1304,11 @@ margin: 0 auto;}
 
 }
 
-.news  .page-head h1, .news .related-stories h1, .news .post-single .single-post-header h1, .news #comments h2{ color:#a2a2a2; }
+.news .post-single .single-post-header h1, .news #comments h2{ color:#a2a2a2; }
 
 /*.rumors  .page-head h1, .rumors .related-stories h1, .rumors .post-single .single-post-header h1, .rumors #comments h2{ color:#339900; }*/
 
-.videos  .page-head h1, .videos .related-stories h1, .videos .post-single .single-post-header h1{ color:#a2a2a2;margin-bottom: 0px; }
+ .videos .post-single .single-post-header h1{ color:#a2a2a2;margin-bottom: 0px; }
 
 /*.fashion-style  .page-head h1, .fashion-style .related-stories h1, .fashion-style .post-single .single-post-header h1, .fashion-style #comments h2{ color:#cccccc; }*/
 
@@ -1445,13 +1449,23 @@ margin: 0 auto;}
 
 
 
-#respond input[type=text] { width:300px; margin-right:20px; }
+#respond input[type=text] { 
+  width:300px;
+  margin-right:20px;
+  font-family: "ITCAvantGardeGothicStdBook", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+  border: 1px solid #757575;
+  background-color:#fff;
+  padding: 8px 11px; 
+ }
 
 textarea {width:86%; height:61px; background:#fff url(images/bg_comment_box.jpg) no-repeat 0 0; padding:0 10px 0 70px; }
 
-#respond #submit { height:26px; width:89px; background-image:url(images/btn_submit.png); background-repeat:no-repeat; background-position:0 0; float:right; border:none; cursor:pointer; }
+#respond #submit { height:26px; width:89px; float:right; border:none; cursor:pointer; color: #fff;margin-right: 70px;font-weight: bold; }
 
-#respond #wp-social-login-connect-options { float:left; padding-right:20px; }
+#respond #wp-social-login-connect-options {  padding-right:20px; }
 
 #respond .login-post-comment { font-size:14px; font-style:normal; }
 
