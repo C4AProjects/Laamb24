@@ -1,5 +1,5 @@
 <div class="related-stories " >
-<h1>Related Stories</h1>
+<h1>Articles relatifs</h1>
     <?php $posts = previous_post_link_plus( array(
 'order_by' => 'post_date',
 'thumb' => true,

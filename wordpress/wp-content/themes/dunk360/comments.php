@@ -63,17 +63,17 @@
 
 <?php if ( is_user_logged_in() ) : ?>
 
-<p><?php _e('Logged in as:','dunk360').' '?><a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php _e('Log out','dunk360');?>"><?php _e('Log out','dunk360');?></a></p>
+<p><?php _e('Connecté en tant que:','dunk360').' '?><a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php _e('Log out','dunk360');?>"><?php _e('Déconnexion','dunk360');?></a></p>
 
 <?php else : ?>
 <?php do_action( 'wordpress_social_login' ); ?>
 <p>
-<label for="author"><small><?php _e('Name','dunk360');?> <?php if ($req) _e('required','dunk360'); ?></small></label>
+<label for="author"><small><?php _e('Nom d\'utilisateur','dunk360');?> <?php if ($req) _e('(requis)','dunk360'); ?></small></label>
 <input type="text" name="author" id="author" value="<?php /*echo esc_attr($comment_author); */ echo esc_attr($comment_author);?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
 </p>
 
 <p>
-<label for="email"><small><?php _e('Email','dunk360'); _e('(will not be published)','dunk360'); if ($req) _e('(required)','dunk360'); ?></small></label>
+<label for="email"><small><?php _e('Email','dunk360'); _e('(ne sera pas publié)','dunk360'); if ($req) _e('(requis)','dunk360'); ?></small></label>
 <input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
 </p>
 

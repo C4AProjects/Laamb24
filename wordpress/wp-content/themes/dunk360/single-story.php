@@ -42,11 +42,11 @@ get_header(); ?>
                                 '',
                                 '',
                                 array('class' => 'photo'),
-                                get_template_directory_uri() . '/nophoto.jpg'
+                                get_template_directory_uri() . '/nophoto.png'
                             ) ?>
                             </div>
                         <div class="entry-author-suite" style="float:left;">
-                            <span class="blogger"> by <?php the_author() ?> | </span>
+                            <span class="blogger"> par <?php the_author() ?> | </span>
                             <span class="date"><?php // echo get_the_time(__('F j Y')); ?>
                             <?php echo get_the_time(__('F j Y H:i')); ?></span> 
                         </div>           

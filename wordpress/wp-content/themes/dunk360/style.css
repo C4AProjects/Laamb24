@@ -554,12 +554,12 @@ body {   height:100%;text-align:left;width:100%;}
   color: #9a1400;
 } 
 #twitter .pointer{
-  border :1px solid #454545;
+  /*border :1px solid #454545;
     -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
-  border-radius: 5px;
+  border-radius: 5px;*/
 }
 
 
@@ -1272,7 +1272,7 @@ margin: 0 auto;}
 
 .news  .page-head{ }
 
-.rumors .pagination span,.rumors .pagination a, .news .pagination span,.news .pagination a,.legends .pagination span,.legends .pagination a,.fashion-style .pagination span,.fashion-style .pagination a {
+/*.rumors .pagination span,.rumors .pagination a, .news .pagination span,.news .pagination a,.legends .pagination span,.legends .pagination a,.fashion-style .pagination span,.fashion-style .pagination a {
   display: block;
   float: left;
   margin: 0 2px 2px 0;
@@ -1282,7 +1282,7 @@ margin: 0 auto;}
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   line-height: 24px;
-}
+}*/
 .rumors .page-title h1{
   margin-bottom: 0px;
 }
@@ -1673,11 +1673,11 @@ footer.fter{ font-size:12px; overflow:hidden; min-height:160px;}
   font-family: "ITCAvantGardeGothicStdMedium", Arial, sans-serif;
 }
 .fmenu ul{text-align: right; color: #8c8c8c;font-size: 15px;line-height: 20px;}
-.fmenu ul li:first-child{font-size: 22px;}
+.fmenu ul li:first-child{font-size: 22px;text-transform: uppercase;}
 .fmenu h2{
   color: rgb(140,140,140);
   font-size: 22px;
-  
+  text-transform: uppercase;
 }
 
 /*==================================================================
@@ -1715,7 +1715,7 @@ footer.fter{ font-size:12px; overflow:hidden; min-height:160px;}
     border: none;
     height: 30px;
     font-weight: bold;
-    margin-left: -27px;
+    /*margin-left: -27px;*/
     border-radius:0 3px 3px 0 ;
   }
 
