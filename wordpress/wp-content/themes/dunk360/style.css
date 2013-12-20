@@ -533,7 +533,7 @@ body {   height:100%;text-align:left;width:100%;}
 
 #search-box .inline .text:focus{ color:#000;  box-shadow:2px;-moz-box-shadow:none;-webkit-box-shadow: 2px; outline:none; }
 
-#search-box .submit-btn { cursor:pointer; background:transparent url(images/icons/btn_q.png) no-repeat 0 0; width:26px; height:24px; border:0; }
+#search-box .submit-btn { cursor:pointer; background:#9a1400 url(images/icons/lens_icon.png) no-repeat center; width:26px; height:24px; border:0; }
 
 
 
@@ -545,6 +545,8 @@ body {   height:100%;text-align:left;width:100%;}
 ======================================*/
 #twitter{
   background: transparent url(images/bare-top.png) no-repeat left center;
+  
+  padding-left: 117px !important;
  
 }
 #twitter marquee a, #twitter div a {
@@ -560,6 +562,31 @@ body {   height:100%;text-align:left;width:100%;}
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;*/
+}
+
+
+#twitter h2 {
+    float: left; /* We'll make the heading sit on its own line next to the tweets */
+    min-width:10%;
+    width: auto; /* Might wanna change this depending on the text in the heading */
+    margin: 0;
+    padding: 6px 0; /* I'll set the top and bottom padding here rather than in the container so as not to cut off any text */
+    font-size: 12px;
+    color: #4b9fff;
+    line-height: 1;
+    background-color:#f1f2f8;
+    visibility: hidden;
+    position: absolute;
+}
+
+#twitter .twitimeline{
+  display: block;
+  height: 14px;
+  width: 17px;
+  background: transparent url(images/twitter_icon.png) no-repeat center;
+  float: left;
+  position: absolute;  
+  margin-top: 5px;  
 }
 
 
@@ -1138,17 +1165,22 @@ float: left;
 }
 /*.share-url { position:absolute; top:20px; right:15px; width:85px; height:18px; float:left; }*/
 
-.share-icons{ height:32px; width:85px; background:transparent url(images/social-ico.jpg) right 0 no-repeat;margin: 0 auto; }
+.share-icons{ /*height:32px; width:85px;margin: 0 auto;*/ 
+  position: relative;
+  right: -96%;
+  top: -50px;
 
-.share-icons a{ display:block; height:32px; width:40px; color:#fff; font-size:11px; font-weight:bold; font-family:Arial, Helvetica, sans-serif; float:left; margin-left:1px; text-transform:uppercase; }
+}
+
+.share-icons a{ display:block; height:32px; width:40px; color:#fff; font-size:11px; font-weight:bold; font-family:Arial, Helvetica, sans-serif; margin-bottom:5px; text-transform:uppercase; }
 
  .share-icons a span{ position:absolute; text-indent:9999px; } 
 
 .share-icons #share-label{ width:46px; line-height:18px; } 
 
-.share-icons #share-twitter { background-position:0 0; }
+.share-icons #share-twitter { background:transparent url(images/icons/twitter_icon_social.png) no-repeat center; }
 
-.share-icons #share-facebook { background-position:0 -18px; }
+.share-icons #share-facebook { background:transparent url(images/icons/facebook2_icon.png) no-repeat center; }
 
 
 

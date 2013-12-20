@@ -45,7 +45,7 @@ if (!class_exists("ag_twitfeed_widget")) {
 		$tweets = json_decode($tweets);
 		
 		echo '<div id="twitter">';
-    	echo '<a href="http://www.twitter.com/'.$twittername.'" target="_blank" ><h2>Follow @<span id="twitname">'.$twittername.'</span> on Twitter</h2></a>';
+    	echo '<a class="twitimeline" href="http://www.twitter.com/'.$twittername.'" target="_blank" ><h2>Follow @<span id="twitname">'.$twittername.'</span> on Twitter</h2></a>';
 		echo '<marquee behavior="scroll" scrollamount="1" direction="left">';
 		
 		foreach ( $tweets->statuses as $entry ) {
