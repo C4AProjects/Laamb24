@@ -150,7 +150,7 @@ else { echo 'top-stories'; }
           <ul>
             <li id="facebook_icon">
               <a id="facebook_link" href="#">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/icons/facebook_icon.png" alt="facebook"></a>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/icons/facebook-icon.png" alt="facebook"></a>
             </li>
             <li id="twitter_icon">
               <a id="twitter_link" href="#">
