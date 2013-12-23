@@ -451,7 +451,7 @@ add_filter( 'wp_nav_menu_objects', 'laamb_wp_nav_menu_objects' );
     Underconstruction / Maintenance Mode
 ----------------------------------------------------------------------------- */
  
-function mytheme_under_contruction(){
+function laamb_under_contruction(){
  
     // if user is logged in, don't show the construction page
     if ( is_user_logged_in() ) {
@@ -502,6 +502,6 @@ function mytheme_under_contruction(){
  
 }
  
-// add_action( 'template_redirect', 'mytheme_under_contruction' );
+ add_action( 'template_redirect', 'laamb_under_contruction' );
 
 ?>
