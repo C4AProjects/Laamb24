@@ -8,10 +8,9 @@
 		<!--	
 		<a href="<?php the_permalink(); ?>" class="readnow"><span>Read Now</span></a>
 	   -->
-	    <a class="thumb_readnow_lnk" href="<?php echo the_permalink(); ?>">Lire la suite...</a>
-		<!--
+	    <a class="thumb_readnow_lnk" href="<?php echo the_permalink(); ?>">Lire</a>
+		
 		<?php locate_template( array( '/templates/simplelikes.php'), true, false ); ?>
-	    -->
 	</div>
 	</div>
 	

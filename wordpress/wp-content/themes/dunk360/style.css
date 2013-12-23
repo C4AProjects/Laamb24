@@ -199,13 +199,13 @@ a{outline:none;text-decoration:none; color: rgb(140,140,140);}
 
 /*.news a:hover{ color:#cc0000; }*/
 
-.rumors a:hover{ color:#339900; }
+/*.rumors a:hover{ color:#339900; }
 
 .videos a:hover{ color:#0077f0; }
 
 .legends a:hover{ color:#cc9900; }
 
-.fashion-style  a:hover{ color:#cccccc; }
+.fashion-style  a:hover{ color:#cccccc; }*/
 
 
 
@@ -730,7 +730,7 @@ color: #CCC; font-size: 14px; display: block; float:left; padding: 12px 19px 3px
 .thumb_readnow_lnk, .thumb_readnow_lnk:hover{
   color:#000;
   font-style: italic;
-  font-size: 18px;
+  
 
 }
 
@@ -922,6 +922,7 @@ body.undercons{
   color: #000;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:1.15em;
+  margin-bottom: 20px;
 }
 /* =============================================================================
 
@@ -1007,7 +1008,7 @@ body.undercons{
 
 .post-entries li.hover  .post-link{ visibility:visible; } /** use of visibility instead of display cuz of fb like **/
 
-a.readnow{ display:inline-block; width:89px; line-height: 25px;
+a.readnow,.thumb_readnow_lnk{ display:inline-block; width:89px; line-height: 25px;
 height: 26px;
 color: #fff;
 font-weight: bold;  }
@@ -1018,7 +1019,7 @@ a.readnow span{ position:absolute;  margin-left:-9999em;}
 
 .news a.readnow{ background-color:#9a1400; }
 
-.rumors a.readnow{ background-color:#9a1400; }
+.rumors a.readnow,.thumb_readnow_lnk{ background-color:#9a1400; }
 
 .videos a.readnow{ background:#9a1400 ; }
 
@@ -1114,7 +1115,7 @@ a.readnow span{ position:absolute;  margin-left:-9999em;}
 }
 .entry-meta{
   overflow: hidden;
-  margin-top: -25px;
+  
 }
 .entry-author-suite{
   margin-top: 59px;
