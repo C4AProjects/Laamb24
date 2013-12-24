@@ -163,7 +163,7 @@ $bans = implode("','", $banners);
 $bansstr = '[\''.$bans. '\']';
 ?>
 function formatText(index, panel) {
- return <?php echo $bansstr; ?>[index - 1];
+ return "";
 }
 
 jQuery("ul.tabs >li").css('visibility','hidden');
@@ -189,8 +189,8 @@ jQuery(document).ready(function(){
                 buildNavigation: true,          // If true, builds and list of anchor links to link to each slide
         		pauseOnHover: true,             // If true, and autoPlay is enabled, the show will pause on hover
         		startText: "Go",             // Start text
-		        stopText: "Stop"               // Stop text
-		        // navigationFormatter: formatText       // Details at the top of the file on this use (advanced use)
+		        stopText: "Stop",               // Stop text
+		         navigationFormatter: formatText       // Details at the top of the file on this use (advanced use)
             });
            
         

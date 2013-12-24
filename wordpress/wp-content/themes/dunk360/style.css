@@ -642,17 +642,37 @@ body {   height:100%;text-align:left;width:100%;}
 
 
 
-#thumbNav                               { position: relative; top: 426px; left: 0; width: 960px; height:53px;display: none;} 
+#thumbNav { 
+  position: relative; 
+  top: 585px;
+  left: 401px;
+  width: 150px;
+  height: 53px;
+  z-index: 1;
+} 
 
-#thumbNav a                             { font-family:"ITCAvantGardeGothicStdDemi", Arial, Helvetica, sans-serif; font-weight:normal;
+#thumbNav a { 
 
-color: #CCC; font-size: 14px; display: block; float:left; padding: 12px 19px 3px 19px; height: 38px; width: 281px; background:transparent url(images/bg_slider_nav.png) repeat-x left top; text-decoration:none; margin-right:1px; border-bottom:solid 1px #333333; text-transform:uppercase; line-height:normal; }
+  display: block; 
+  float:left; 
+  padding: 12px 19px 3px 19px;
+  background:transparent url(images/dot-red.png) no-repeat center; 
+  text-decoration:none; 
+  margin-right:1px;
+   text-transform:uppercase; 
+   line-height:normal; 
+ }
 
-#thumbNav a:hover                       { color:#036E24; }
+#thumbNav a:hover{ background:transparent url(images/dot-white.png) no-repeat center ;  }
 
-#thumbNav a.cur                         { color:#036E24; border-bottom:solid 1px #191919;  width: 281px;  background:transparent url(images/bg_slider_nav_active.jpg) repeat-x left top; }
+#thumbNav a.cur { 
+  background:transparent url(images/dot-white.png) no-repeat center ; 
+}
 
-#thumbNav a.last { width:282px; margin-right:0; }
+#thumbNav a.last { 
+  /*width:282px; */
+  margin-right:0; 
+}
 
 
 
@@ -679,9 +699,9 @@ color: #CCC; font-size: 14px; display: block; float:left; padding: 12px 19px 3px
 /*#top-featured-stories { height:135px; background-color:#191919;overflow:hidden; position:relative;  }*/
 #top-featured-stories {
   margin-left: 0px;
-  left: -242px;
-  width: 260px;
-  height: 180px;
+  left: -262px;
+  width: 280px;
+  height: 200px;
   top: 200px;
   background-color: rgb(149,13,13);
   overflow: hidden;
@@ -690,7 +710,7 @@ color: #CCC; font-size: 14px; display: block; float:left; padding: 12px 19px 3px
 
 #top-featured-stories li{ position: absolute; left:0; top: 0; word-wrap:break-word;}
 
-#top-featured-stories li h1{ line-height:normal; padding:0; margin:40px 0 20px 0; word-wrap: break-word; font-size: 24px;text-align: center;} 
+#top-featured-stories li h1{ line-height:normal; padding:0 20px; margin:50px 0 20px 0; word-wrap: break-word; font-size: 24px;text-align: center;} 
 
 /*#top-featured-stories h1 a{ font-style:italic; }*/
 #top-featured-stories li h1 a {color: #FFF; font-weight: bold;}

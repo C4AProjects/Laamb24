@@ -57,7 +57,7 @@
                     <h4 class="category"><?php the_category(); ?></h4>
                     <h1>
                         <a href="<?php echo the_permalink(); ?>">
-                            <?php echo short_title('...', 11); ?>
+                            <?php echo short_title('...', 8); ?>
                         </a>
                     </h1>
 <!--                         <h4><?php
@@ -68,9 +68,9 @@
                 		}
                 		 ?></h4> -->
                          
-                        <!-- <a class="readnow" href="<?php// echo the_permalink(); ?>"><span>Read Now</span></a> -->
+                        <!-- <a class="readnow" href="<?php// echo the_permalink(); ?>"><span>Read Now</span></a> 
                         
-                        <a class="readnow_lnk" href="<?php echo the_permalink(); ?>">Lire la suite...</a>
+                        <a class="readnow_lnk" href="<?php //echo the_permalink(); ?>">Lire la suite...</a>-->
                         <!--
                         <div class="social">
                         	<?php echo do_shortcode('[simplelikes]'); ?>
