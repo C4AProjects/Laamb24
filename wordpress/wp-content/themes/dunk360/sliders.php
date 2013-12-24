@@ -29,9 +29,12 @@
 				   $post_not_ids[] = $post->ID;
                     ?>
                  <li>
-                <?php if (has_post_thumbnail( $post->ID ) ): 
-					the_post_thumbnail('laamb-large'); 
-		 		endif; ?>  
+                  <a href="<?php echo the_permalink(); ?>">
+                        <?php if (has_post_thumbnail( $post->ID ) ): 
+
+        					the_post_thumbnail('laamb-large'); 
+        		 		endif; ?>  
+                    </a>
                 </li>
                 
                  <?php endwhile; endif;  ?>
