@@ -1961,4 +1961,7 @@ footer.fter{ font-size:12px; overflow:hidden; min-height:160px;}
   input.newsletter-email {
     width: 114px;
   }
+  #thumbNav{
+    left:240px;
+  }
 }
