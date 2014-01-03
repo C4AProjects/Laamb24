@@ -1,6 +1,6 @@
 /* CSS Document */
 html, body.login { background:none repeat scroll 0 0 #101011; }
-.login h1 a {  width:320px; height:76px; background: transparent url(../images/logo.png) 50% 50% no-repeat !important; }
+.login h1 a {  width:320px; height:76px; background: transparent url(../images/logo/laamb24_logo.png) 50% 50% no-repeat !important; }
 #login { padding: 30px 0 0; }
 .login #nav a, .login #backtoblog a{outline:none;text-decoration:none; color:#fff !important; text-shadow:0 0 1px #000; }
 .login #nav a:hover, .login #backtoblog a:hover{ color:#f07800 !important; }

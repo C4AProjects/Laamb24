@@ -1502,7 +1502,7 @@ margin: 0 auto;}
 
 
 
-#respond input[type=text] { 
+#respond input[type=text] ,#FSContact1 input[type=text]{ 
   width:300px;
   margin-right:20px;
   font-family: "ITCAvantGardeGothicStdBook", Arial, Helvetica, sans-serif;
@@ -1512,6 +1512,10 @@ margin: 0 auto;}
   border: 1px solid #757575;
   background-color:#fff;
   padding: 8px 11px; 
+ }
+ #FSContact1 textarea{
+  max-width: 500px !important;
+   padding-left: 65px;
  }
 
 textarea {width:86%; height:61px; background:#fff url(images/bg_comment_box.jpg) no-repeat 0 0; padding:0 10px 0 70px; }

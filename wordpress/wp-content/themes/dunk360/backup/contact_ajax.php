@@ -1,6 +1,6 @@
 <?php
 //if(!defined("REL")) { exit(); }
-define('ADMIN', 'info@angiogroup.com');
+define('ADMIN', 'contact@laamb24.com');
 
 // Function to validate email
 function spamcheck($field){
@@ -34,7 +34,7 @@ $email = trim($_POST['email']);
 $phone = stripslashes($_POST['phone']);
 $message = strip_tags(htmlspecialchars($_POST['comments']));
 $answer = stripslashes($_POST['answer']);
-$lang = stripslashes($_POST['form_language']);
+
 $error = '';
 
 //if($_method){exit();} // check against spambots

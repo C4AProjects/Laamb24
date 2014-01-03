@@ -327,7 +327,7 @@ echo '<meta content="Vi tester Sony PlayStation Vita - Review" property="og:titl
 /*-------------------------------------------------------------
 ~~~~~~~~Load Contact us options ~~~~~~~~
 -------------------------------------------------------------*/
-require_once("contact_options.php");
+//require_once("contact_options.php");
 
 /*-------------------------------------------------------------
 ~~~~~~~~Load Framework ~~~~~~~~
@@ -502,6 +502,32 @@ function laamb_under_contruction(){
  
 }
  
- add_action( 'template_redirect', 'laamb_under_contruction' );
+ // add_action( 'template_redirect', 'laamb_under_contruction' );
 
+
+ function laamb_modify_howdy(){
+ 		global $wp_admin_bar;
+ 		$user_id      = get_current_user_id();
+		$current_user = wp_get_current_user();
+		$profile_url  = get_edit_profile_url( $user_id );
+
+		if ( ! $user_id )
+			return;
+
+		$avatar = get_avatar( $user_id, 16 );
+		$howdy  = sprintf('Diadieuf, %1$s', $current_user->display_name );
+		$class  = empty( $avatar ) ? '' : 'with-avatar';
+
+		$wp_admin_bar->add_menu( array(
+			'id'        => 'my-account',
+			'parent'    => 'top-secondary',
+			'title'     => $howdy . $avatar,
+			'href'      => $profile_url,
+			'meta'      => array(
+				'class'     => $class,
+				'title'     => __('My Account'),
+			),
+		) );
+ }
+ add_action('admin_bar_menu', 'laamb_modify_howdy',25);
 ?>

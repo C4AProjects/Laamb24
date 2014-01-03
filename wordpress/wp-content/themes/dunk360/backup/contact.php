@@ -20,7 +20,7 @@ global $post;
 
     	<div class="two-col one lft sidebar">
           	<aside class="rounded-big">
-            <?php get_sidebar(); ?>
+            <?php// get_sidebar(); ?>
             </aside>
         </div>
         <div class="two-col two lft sub-page">
@@ -68,7 +68,7 @@ global $post;
     </ul>-->
             </div>
         </div>
-        <div class="block" style="width:300px; float:left;">
+        <div class="block" style="; float:left;">
         <div id="contact-form">
         	<div class="inner">
             <h3>Our Office</h3>
@@ -88,7 +88,7 @@ global $post;
     
     </div>
     <div id="container_2"><br class="clr" /> <br class="clr" /> 
-    	<h3>Alternatively use the Contact Form below to get in touch</h3>
+    	<h3>Ou utilisez le formulaire de contact ci-dessous</h3>
         <form method="post" action="<?php echo get_template_directory_uri(); ?>/contact_ajax.php" class="contactform rounded shadow" name="contactusform" id="contactusform">            
             <fieldset>
             <table width="100%" id="form-content">
@@ -97,38 +97,38 @@ global $post;
     </tr>
   <tr>
     <td width="57%"><div>
-                  <label for="name">First Name<span class="required">*</span></label>
+                  <label for="name">Prenom<span class="required">*</span></label>
                         <input type="text" size="37" name="name" id="name" title="Enter First Name!" class="text" value=""/>
                     </div> 
         <div>
-                        <label for="name2">Last Name<span class="required">*</span></label>
+                        <label for="name2">Nom<span class="required">*</span></label>
                         <input type="text" size="37" name="name2" id="name2" title="Enter Last Name!" class="text" value=""/>
                     </div>                   
         <div>
-                        <label for="email">Email Address<span class="required">*</span></label>
+                        <label for="email">Email <span class="required">*</span></label>
                         <input type="text" size="37" name="email" id="email" title="Enter a valid Email Address" class="text" value=""/>
                       </div>            
         <div>
-                        <label for="phone">Phone Number</label>
+                        <label for="phone">Numero Téléphone</label>
                         <input type="text" size="37" name="phone" id="phone" title="Enter Phone Number" class="text" value=""/>
                     </div>
                     <div class="captcha">
-         	<label for="answer">Type "angio" in the box below<span class="required">*</span></label>
+         	<label for="answer">Tapez "angio" dans le champ ci-dessous<span class="required">*</span></label>
             <input type="text" name="answer" id="answer" class="text" value=""/>
          </div>
     </td>
     <td width="3%">&nbsp;</td>
     <td width="40%"><div>
-                    <label for="subject">Subject<span class="required">*</span></label>
+                    <label for="subject">Sujet<span class="required">*</span></label>
                     	<select name="subject" id="subject" style="width:20em;">
-                    	  <option value="0">Select subject</option>
+                    	  <option value="0">Choisissez un sujet</option>
                     	  <option value="feedback">Feedback</option>
-                    	  <option value="enquiry">Enquiry</option>
-                          <option value="request">Request a Quote</option>                        
+                    	  <option value="enquiry">Renseignements</option>
+                          <option value="request">Demander un devis</option>                        
                         </select>
                     </div>
         <div>	
-                        <label for="comments">Comments</label>
+                        <label for="comments">Commentaires</label>
                         <textarea rows="8" name="comments" id="comments" style="width:20em;" title="Enter message!" class="text"/></textarea>
                      </div>
     </td>
@@ -140,7 +140,7 @@ global $post;
   </tr>
   <tr>
     <td><div class="button">
-                            <input type="submit" value=" Submit  &raquo; " class="btn2" id="submit"/>
+                            <input type="submit" value="Envoyer" class="btn2" id="submit"/>
                         </div>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
