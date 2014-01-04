@@ -1,5 +1,6 @@
-<?php get_header();
-global $post;
+<?php   
+    get_header();
+    global $post;
  ?>
     <div class="content">
     <div class="grid_9  single-page">

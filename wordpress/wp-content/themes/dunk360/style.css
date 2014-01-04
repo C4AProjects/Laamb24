@@ -14,8 +14,6 @@
 
 */
 
-
-
 /* =============================================================================
 
    HTML5 resets definitions
@@ -51,13 +49,6 @@ hr{display:block;height:1px;border:0;border-top:1px solid #cccccc;margin:1em 0;p
 input, select{vertical-align:middle;}
 
 ol, ul{list-style:none outside none;}
-
-
-
-
-
-
-
 
 
 
@@ -252,32 +243,6 @@ strong { font-weight:bold;}
 html { text-align:center; width:100%; background:#FFF;}
 
 body {   height:100%;text-align:left;width:100%;}
-
-
-/**
- * Fluid layout
- */
-
-/*
-.row, .container{width:92% ; margin:0 auto; }
-.main-content,.banner-wrapper{
-  width: 74%;
-}
-#sidebar{
-  width: 20%;
-}
-
-.banner{
-  width:45%;
-}
-.post-entries  ul li{ 
-  float:left; 
-  width: 16%;
-  margin-right: 7%;*/
-}
-/**
- * /Fluid layout End
- */
 
 
 .lft{float:left;}.rgt{float:right;} .clr{clear:both;height:0px;}.clear{clear:both;}
