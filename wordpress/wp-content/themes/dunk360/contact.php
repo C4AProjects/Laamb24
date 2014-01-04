@@ -7,8 +7,7 @@ global $post;
             <div class="page-head">
                 <div class="page-title"><h1><?php echo $post->post_title; ?></h1></div>
             </div>
-               <div class="main-content info-page">
-                    <?php //echo apply_filters('the_content', $post->post_content); ?>
+               <div class="main-content info-page">                    
                     <?php echo do_shortcode( "[si-contact-form form='1']" ); ?>
                 </div>            
             </div>
