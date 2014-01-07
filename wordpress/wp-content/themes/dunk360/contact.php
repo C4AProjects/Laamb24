@@ -1,4 +1,5 @@
-<?php   
+<?php
+    /*Template name: contact Page*/   
     get_header();
     global $post;
  ?>
