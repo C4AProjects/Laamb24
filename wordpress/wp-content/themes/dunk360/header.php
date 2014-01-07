@@ -77,6 +77,7 @@ else { echo 'top-stories'; }
             <a href="<?php echo get_option('home'); ?>/">
               <img src="<?php echo get_template_directory_uri(); ?>/images/logo/laamb24_logo.png" alt="" style="width:415px;">
               <span class="blog_desc"><span class="part1"><?php _e("Number #1 Website in ") ?></span><span class="part2"><?php _e("Senegalese wrestling") ?></span></span>
+              <span class="blog_desc sub"><?php _e("African Martial Art") ?></span>
               <!-- <span>
                 <?php //bloginfo('name'); ?>
                 |

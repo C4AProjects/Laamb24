@@ -3,10 +3,8 @@
 </h3>
 <h4><?php
 if($post->post_excerpt != ''){
-	// echo short_content(strip_tags($post->post_excerpt), '...', 6);
-		echo short_title('...', 10);
+	echo the_title( );
 }else {
-	// echo short_content(strip_tags($post->post_content), '...', 6);
-		echo short_title('...', 10);
+	echo the_title();
 }
  ?></h4>
