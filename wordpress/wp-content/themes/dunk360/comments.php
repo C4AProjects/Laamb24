@@ -66,7 +66,7 @@
 <p><?php _e('Connecté en tant que:','dunk360').' '?><a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php _e('Log out','dunk360');?>"><?php _e('Déconnexion','dunk360');?></a></p>
 
 <?php else : ?>
-<?php do_action( 'wordpress_social_login' ); ?>
+<?php //do_action( 'wordpress_social_login' ); ?>
 <p>
 <label for="author"><small><?php _e('Nom d\'utilisateur','dunk360');?> <?php if ($req) _e('(requis)','dunk360'); ?></small></label>
 <input type="text" name="author" id="author" value="<?php /*echo esc_attr($comment_author); */ echo esc_attr($comment_author);?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
