@@ -55,6 +55,7 @@
     &copy; All rights reserved <?php echo bloginfo('name');?> <?php echo date('Y'); ?>
     </div> -->
    </section>
+   <section class="c4a" style="clear:both"><p style="text-align:center">Powered by <a href="http://www.coders4africa.org"  target="_blank">Coders4Africa</a></p></section>
 </footer>
 </div><!-- End for Page wrap -->
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.1.8.1.min.js" type="text/javascript"></script>
