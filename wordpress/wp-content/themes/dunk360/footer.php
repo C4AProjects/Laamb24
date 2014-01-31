@@ -23,17 +23,17 @@
           </h1>
         </div>
 			        <div id="social_media_links">
-          <ul>
+           <ul>
             <li id="facebook_icon">
-              <a id="facebook_link" href="#">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/icons/facebook_icon.png" alt="facebook"></a>
+              <a id="facebook_link" href="https://www.facebook.com/laamb24" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/icons/facebook-icon.png" alt="facebook"></a>
             </li>
             <li id="twitter_icon">
-              <a id="twitter_link" href="#">
+              <a id="twitter_link" href="https://twitter.com/laamb24sn" target="_blank">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/icons/twitter_icon.png" alt="twitter"></a>
             </li>
             <li id="google_plus_icon">
-              <a id="google_plus_link" href="#">
+              <a id="google_plus_link" href="https://google.com/+Laamb24sn" target="_blank">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/icons/google_plus_icon.png" alt="google plus"></a>
             </li>
           </ul>
