@@ -5,10 +5,16 @@
 	echo $category[0]->cat_name;
     ?>
 </h3>
-<h4><?php
+<h4>
+<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( '%s', 'Laamb24' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
+<?php
 if($post->post_excerpt != ''){
-		echo the_title();
+		//echo the_title();
+		echo short_title('...', 15);
 }else {
-			echo the_title();
+			// echo the_title();
+			echo short_title('...', 15);
 }
- ?></h4>
+ ?>
+</a>
+ </h4>
