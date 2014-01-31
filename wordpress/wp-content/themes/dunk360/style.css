@@ -725,7 +725,7 @@ body {   height:100%;text-align:left;width:100%;}
 
 /* simple like buttons */
 
-.simple_likebuttons_container_small{ float:right; height:22px !important; overflow:hidden; }
+.simple_likebuttons_container_small{ height:22px !important; overflow:hidden;width: 160px;margin: 0 auto!important; }
 
     
 
@@ -936,7 +936,7 @@ body.undercons{
 
 .post-entries li .post-link{ visibility:hidden; }
 
-.post-entries li .post-link .social{ float:right; margin-top:-8px; }
+.post-entries li .post-link .social{margin-top:-8px; }
 
 .post-entries li.hover { cursor:pointer; }
 
